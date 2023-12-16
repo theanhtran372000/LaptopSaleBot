@@ -19,7 +19,7 @@ client = ChatGPTClient(configs)
 
 # Streamlit app
 # st.title("SaleBot")
-st.markdown("<h1 style='text-align: center; color: black; margin-top: -50px; margin-bottom: -20px'>SaleBot</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: orange; margin-top: -50px; margin-bottom: -20px'>SaleBot</h1>", unsafe_allow_html=True)
 st.markdown("<h5 style='text-align: center; color: grey;'><i>- thegioididong.com -</i></h5>", unsafe_allow_html=True)
 st.divider()
 
