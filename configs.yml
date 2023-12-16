@@ -1,0 +1,23 @@
+openai:
+  model_name: 'gpt-3.5-turbo-1106'
+  min_matched: 20
+
+mysql:
+  host: '34.124.129.17'
+  db: 'thegioididong'
+  user: 'theanh'
+  pass: 'Theanhbeo372000!'
+
+prompt:
+  intro:
+    greet: 'prompts/intro/greet.txt'
+  utils:
+    category: 'prompts/utils/category.txt'
+    compare: 'prompts/utils/compare.txt'
+  anno:
+    apology: 'prompts/anno/apology.txt'
+    runout: 'prompts/anno/runout.txt'
+  require:
+    get: 'prompts/utils/require/get.txt'
+    format: 'prompts/utils/require/format.txt'
+    

@@ -1,0 +1,30 @@
+Bạn cần chuyển đổi yêu cầu của người dùng thành dữ liệu dưới dạng JSON để có thể đọc vào bằng máy tính.
+Yêu cầu người dùng là dạng văn bản. Bạn cần trích chọn những thông tin cần thiết và điền vào trong kết quả, output ra dưới định dạng JSON.
+
+Dưới đây là một ví dụ:
+Đầu vào: "Tôi muốn một cái máy tính HP, không quá 20 triệu, mà đang được giảm giá. Tôi quen dùng hệ điều hành Windows rồi. Có sản phẩm nào khuyến mãi không ạ?"
+Đầu ra:
+{{
+"branch": "HP", 
+"ram": null,
+"cpu": null,
+"os": "Windows",
+"min_price": null,
+"max_price": 20000000,
+"discount": true,
+"purpose": null
+}}
+
+Lưu ý về giá trị và định dạng của từng trường:
+- branch: Hãng sản xuất, kiểu string, thuộc một trong những branch sau Masstel, Acer, ASUS, Lenovo, Itel, MSI, HP, SingPC, Dell, MacBook, GIGABYTE, LG, Surface
+- ram: Bộ nhớ RAM, kiểu int, làm tròn lên tới các giá trị gần nhất là 8, 16, 32, 64
+- cpu: Chip xử lý, kiểu string, thuộc các keyword i3, i5, i7, Ryzen 5, Ryzen 7, Ryzen 9
+- os: Hệ điều hành, kiểu string, thuộc một trong 3 giá trị Windows, macOS
+- min_price, max_price: Giá trị tối thiểu và tối đa, kiểu int, ví dụ 20000000 cho 20 triệu
+- discount: Có giảm giá hay không, giá trị boolean, mặc định là false
+- purpose: Mục đích sử dụng, thuộc một trong 3 loại Gaming, Graphic, Office
+Những trường không có trong thông tin thì để mặc định là null.
+
+Sau đây là yêu cầu thật: 
+Đầu vào: "{}"
+Đầu ra: 
