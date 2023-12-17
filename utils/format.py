@@ -1,5 +1,6 @@
 def laptop_to_string(lap):
     return f'''MẪU: {lap[1]}
+- Đường dẫn: https://www.thegioididong.com{lap[2]}
 - Hãng: {lap[3]}
 - CPU: {lap[9]}
 - GPU: {lap[13]}

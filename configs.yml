@@ -1,6 +1,6 @@
 openai:
   model_name: 'gpt-3.5-turbo-1106'
-  min_matched: 20
+  min_matched: 25
 
 mysql:
   host: '34.124.129.17'

@@ -2,6 +2,7 @@ import yaml
 import json
 import random
 import openai
+import pprint
 import streamlit as st
 
 from utils.chatgpt import ChatGPTClient
@@ -98,7 +99,7 @@ if prompt:
             stream=False
         )
         requirements = json.loads(json_string)
-        # st.text("Requirement: {}".format(requirements))
+        # st.text("Requirement: \n{}".format(pprint.pformat(requirements)))
         
         # Filter data
         matched = filter_select(configs, **requirements)
